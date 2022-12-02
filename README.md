@@ -1,1 +1,2 @@
--[TypeScript with React](https://blog.logrocket.com/how-use-typescript-react-tutorial-examples/ )
+- [TypeScript with React](https://blog.logrocket.com/how-use-typescript-react-tutorial-examples/ )
+- [Add typescript](https://create-react-app.dev/docs/adding-typescript )

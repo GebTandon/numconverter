@@ -35,3 +35,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ^^----------------------------------^^
 - [Ref article for this proj](https://refine.dev/blog/next-js-with-typescript/ )
+
+# NextJs #
+- In Next.js, a page is a React Component exported from a .js, .jsx, .ts, or .tsx file in the pages directory. Each page is associated with a route based on its file name.
+- By default, Next.js pre-renders every page. This means that Next.js generates HTML for each page in advance, instead of having it all done by client-side JavaScript. Pre-rendering can result in better performance and SEO.
+    - Static Generation (Recommended): The HTML is generated at build time and will be reused on each request. `next build`.
+        - Your page content depends on external data: Use getStaticProps.
+        - Your page paths depend on external data: Use getStaticPaths (usually in addition to getStaticProps).
+    - Server-side Rendering: The HTML is generated on each request.
+    - You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+    - You can also use Client-side data fetching along with Static Generation or Server-side Rendering. That means some parts of a page can be rendered entirely by client side JavaScript.
+    - Next.js allows you to create or update static pages after you’ve built your site. Incremental Static Regeneration (ISR) enables you to use static-generation on a per-page basis, without needing to rebuild the entire site. With ISR, you can retain the benefits of static while scaling to millions of pages.

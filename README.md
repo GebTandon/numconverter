@@ -46,3 +46,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
     - You can also use Client-side data fetching along with Static Generation or Server-side Rendering. That means some parts of a page can be rendered entirely by client side JavaScript.
     - Next.js allows you to create or update static pages after you’ve built your site. Incremental Static Regeneration (ISR) enables you to use static-generation on a per-page basis, without needing to rebuild the entire site. With ISR, you can retain the benefits of static while scaling to millions of pages.
+- API Routes can't be used with next export
+- API Routes do not specify CORS headers, meaning they are same-origin only by default.
+- [setup debugging](https://thundermiracle.com/blog/en/2020-12-23-debug-nextjs-typescript-in-vscode/ )
+    - [alternate](https://nextjs.org/docs/advanced-features/debugging )

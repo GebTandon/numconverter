@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Chrome-1",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}",
+        "sourceMapPathOverrides": {
+          "webpack:///src/*": "${webRoot}/*"
+        }
+      },
+      {
+        "type": "node",
+        "request": "attach",
+        "name": "Next: Node-server",
+        "skipFiles": ["<node_internals>/**"],
+        "cwd": "${workspaceFolder}",
+        "port": 9229
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Next: Chrome-client",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}",
+        "sourceMaps": true,
+        "sourceMapPathOverrides": {
+          "webpack://_N_E/*": "${webRoot}/*"
+        }
+      }
+    ]
+  }

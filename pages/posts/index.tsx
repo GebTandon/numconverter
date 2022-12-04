@@ -3,7 +3,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import Link from 'next/link';
 import * as React from 'react';
-import type {Posts, Post} from '../types/posts';
+import type {Posts, Post} from '../../types/posts';
 interface PostObj { posts: Posts };
 
 export default function Posts({ posts }:PostObj) {

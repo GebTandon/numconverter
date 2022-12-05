@@ -10,6 +10,9 @@ export default function Posts({post}) {
   );
 }
 
+/// export such a function if there are a fininte number of paths returned from here.
+// since we are calling a web api that is part of this project, the SSR or SSG of website does not work.
+// refer https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev to see elaborate answer.
 export async function getStaticPaths() {
     // Call an external API endpoint to get posts
     const postsResponse = await fetch(process.env.BASE_URL + '/api/posts');

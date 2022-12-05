@@ -2,11 +2,13 @@
   "name": "numconverter",
   "version": "0.1.0",
   "private": true,
+  "type":"module",
   "scripts": {
     "settings":"https://thundermiracle.com/blog/en/2020-12-23-debug-nextjs-typescript-in-vscode/",
     "dev": "next dev",
     "dev-debug-server": "NODE_OPTIONS='--inspect' next dev ./",
-    "build": "next build",
+    "build-ssg": "next build",
+    "build-ssr":"next export",
     "start": "next start",
     "lint": "next lint"
   },

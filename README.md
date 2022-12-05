@@ -34,7 +34,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ^^----------------------------------^^
-- Tutorials POint(https://www.tutorialspoint.com/nextjs/index.htm )
+This repo is intended to be used for demo of next.js's ability for SSR/SSG.
+    Currently, the website runs, but not able to do SSR/SSG, since I'm using APIs' from next JS, which are not SSR/SSG compatible. Need to convert those APIs to an external service and then call them from *Static*() apis of next.js... (refer ^SSG example with Ts^ link below for how it needs to be adopted.)
+- Tutorials Point(https://www.tutorialspoint.com/nextjs/index.htm )
 - [Ref article for this proj](https://refine.dev/blog/next-js-with-typescript/ )
 - [SSG example with Ts](https://www.newline.co/@kchan/static-site-generation-with-nextjs-and-typescript-part-ii-fetching-data-with-getstaticprops--24836924 )
 # NextJs #
